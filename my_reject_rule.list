@@ -1,3 +1,7 @@
-# > my rule
-DOMAIN,analytics.carteclip.com,notification-text="AMA的分析收集域名" // AMA的分析收集域名
-DOMAIN,firebaselogging-pa.googleapis.com,notification-text="OpenCat的分析收集域名" // OpenCat的分析收集域名
+# > my reject rule
+
+# AMA的分析收集域名
+DOMAIN,analytics.carteclip.com
+
+#OpenCat的分析收集域名
+DOMAIN,firebaselogging-pa.googleapis.com
