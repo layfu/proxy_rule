@@ -1,5 +1,0 @@
-# > my rule
-DOMAIN,analytics.carteclip.com,REJECT,notification-text="AMA的分析收集域名" // AMA的分析收集域名
-DOMAIN,firebaselogging-pa.googleapis.com,REJECT,notification-text="OpenCat的分析收集域名" // OpenCat的分析收集域名
-DOMAIN,opencatd.fulei.xyz,DIRECT,notification-text="直连：opencatd.fulei.xyz" // DMIT上的opentd-open项目
-DOMAIN-SUFFIX,openai.com,BWG_99
