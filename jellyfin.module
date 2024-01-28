@@ -2,10 +2,10 @@
 #!desc=Redirecting jellyfin.nas to 172.16.0.2:8096
 
 [General]
-force-http-engine-hosts=%APPEND% jelyfin.nas, www.jelyfin.nas
+force-http-engine-hosts=%APPEND% jellyfin.nas, www.jellyfin.nas
 
 [MITM]
-hostname = %INSERT% jellyfin.nas, www.jelyfin.nas
+hostname = %INSERT% jellyfin.nas, www.jellyfin.nas
 
 [URL Rewrite]
 ^https?://(|www\.)jellyfin\.nas http://172.16.0.2:8096 302
