@@ -1,11 +1,11 @@
 #!name=qb.nas
-#!desc=Redirecting qb.nas to 172.16.0.2:8999
+#!desc=Redirecting qb.com to 172.16.0.2:8999
 
 [General]
-force-http-engine-hosts=%APPEND% qb.nas, www.qb.nas
+force-http-engine-hosts=%APPEND% qb.com, www.qb.com
 
 [MITM]
-hostname = %INSERT% qb.nas, www.qb.nas
+hostname = %INSERT% qb.com, www.qb.com
 
 [URL Rewrite]
-^https?://(|www\.)qb\.nas http://172.16.0.2:8999 302
+^https?://(|www\.)qb\.com http://172.16.0.2:8999 302
