@@ -1,4 +1,4 @@
-#!name=qb.nas
+#!name=qb.com
 #!desc=Redirecting qb.com to 172.16.0.2:8999
 
 [General]
