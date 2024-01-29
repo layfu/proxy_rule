@@ -1,0 +1,11 @@
+#!name=nas.com
+#!desc=Redirecting nas.com to 172.16.0.2:5001
+
+[General]
+force-http-engine-hosts=%APPEND% nas.com, www.nas.com
+
+[MITM]
+hostname = %INSERT% nas.com, www.nas.com
+
+[URL Rewrite]
+^https?://(|www\.)nas\.com https://172.16.0.2:5001 302
