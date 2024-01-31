@@ -1,0 +1,11 @@
+#!name=clash.com
+#!desc=Redirecting clash.com to http://172.16.0.100/cgi-bin/luci/admin/services/openclash
+
+[General]
+force-http-engine-hosts=%APPEND% clash.com, www.clash.com
+
+[MITM]
+hostname = %INSERT% clash.com, www.clash.com
+
+[URL Rewrite]
+^https?://(|www\.)clash\.com http://172.16.0.100/cgi-bin/luci/admin/services/openclash 302
