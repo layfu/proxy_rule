@@ -1,0 +1,11 @@
+#!name=tmdb.com
+#!desc=Redirecting tmdb.com to https://www.themoviedb.org/
+
+[General]
+force-http-engine-hosts=%APPEND% tmdb.com, www.tmdb.com
+
+[MITM]
+hostname = %INSERT% tmdb.com, www.tmdb.com
+
+[URL Rewrite]
+^https?://(|www\.)tmdb\.com https://www.themoviedb.org/ 302
