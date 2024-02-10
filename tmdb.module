@@ -8,4 +8,4 @@ force-http-engine-hosts=%APPEND% tmdb.com, www.tmdb.com
 hostname = %INSERT% tmdb.com, www.tmdb.com
 
 [URL Rewrite]
-^https?://(|www\.)tmdb\.com https://www.themoviedb.org/ 302
+^https?://(|www\.)tmdb\.com https://www.themoviedb.org 302
