@@ -1,0 +1,11 @@
+#!name=emby.com
+#!desc=Redirecting emby.com to 172.16.0.2:18096
+
+[General]
+force-http-engine-hosts=%APPEND% emby.com, www.emby.com
+
+[MITM]
+hostname = %INSERT% emby.com, www.emby.com
+
+[URL Rewrite]
+^https?://(|www\.)emby\.com http://172.16.0.2:18096 302
