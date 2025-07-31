@@ -1,0 +1,11 @@
+#!name=mteam.com
+#!desc=Redirecting mteam.com to https://next.m-team.cc
+
+[General]
+force-http-engine-hosts=%APPEND% mteam.com, www.mteam.com
+
+[MITM]
+hostname = %INSERT% mteam.com, www.mteam.com
+
+[URL Rewrite]
+^https?://(|www\.)mteam\.com https://next.m-team.cc/ 302
